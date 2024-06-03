@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="index.html">Dashboard</a>
+            <a href="settings.html">Settings</a>
+            <a href="marks.html">Marks</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="timetable.html">Timetable</a>
+        </div>
+        <div class="navbar-right" id="datetime"></div>
+    </div>
+    <div class="container">
+        <h2>Subjects</h2>
+        <table id="subjects-table">
+            <!-- Dynamically filled -->
+        </table>
+        <button id="add-subject-btn">Add Subject</button>
+    </div>
+
+    <div id="subject-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Add Subject</h2>
+            <input type="text" id="subject-input" placeholder="Subject">
+            <input type="text" id="teacher-input" placeholder="Teacher">
+            <button id="save-subject-btn">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

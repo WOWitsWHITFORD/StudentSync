@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="index.html">Dashboard</a>
+            <a href="settings.html">Settings</a>
+            <a href="marks.html">Marks</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="timetable.html">Timetable</a>
+        </div>
+        <div class="navbar-right" id="datetime"></div>
+    </div>
+    <div class="container">
+        <h2>Assignments</h2>
+        <table id="assignments-table">
+            <!-- Dynamically filled -->
+        </table>
+        <button id="add-assignment-btn">Add Assignment</button>
+    </div>
+
+    <div id="assignment-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Add Assignment</h2>
+            <select id="subject-select"></select>
+            <input type="text" id="task-name-input" placeholder="Task Name">
+            <input type="number" id="weighting-input" placeholder="Weighting">
+            <input type="date" id="due-date-input" placeholder="Due Date">
+            <button id="save-assignment-btn">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

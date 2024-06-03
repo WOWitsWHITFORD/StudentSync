@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="index.html">Dashboard</a>
+            <a href="settings.html">Settings</a>
+            <a href="marks.html">Marks</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="timetable.html">Timetable</a>
+        </div>
+        <div class="navbar-right" id="datetime"></div>
+    </div>
+    <div class="container">
+        <h2>Marks</h2>
+        <table id="marks-table">
+            <!-- Dynamically filled -->
+        </table>
+        <button id="add-mark-btn">Add Task</button>
+    </div>
+
+    <div id="mark-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Add Task</h2>
+            <select id="subject-select"></select>
+            <input type="text" id="task-name-input" placeholder="Task Name">
+            <input type="number" id="weighting-input" placeholder="Weighting">
+            <input type="number" id="mark-received-input" placeholder="Your Marks">
+            <input type="number" id="total-marks-input" placeholder="Total Marks">
+            <button id="save-mark-btn">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
