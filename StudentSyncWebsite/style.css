@@ -1,15 +1,17 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    color: #333;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: #333;
-    padding: 10px;
+    background-color: #1a202c;
+    padding: 10px 20px;
     color: white;
 }
 
@@ -18,6 +20,10 @@ body {
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #4a5568;
 }
 
 .navbar-right {
@@ -33,7 +39,7 @@ body {
 .column {
     flex: 1;
     margin: 10px;
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -41,32 +47,20 @@ body {
 
 .column h2 {
     text-align: center;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 8px;
-    text-align: center;
+    color: #2d3748;
 }
 
 button {
     padding: 10px;
-    background-color: #333;
+    background-color: #1a202c;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #4a5568;
 }
 
 .popup {
@@ -88,6 +82,8 @@ button:hover {
     border: 1px solid #888;
     width: 80%;
     max-width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .close {
@@ -102,4 +98,53 @@ button:hover {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+table thead {
+    background-color: #2d3748;
+    color: white;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+table tbody tr {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #2d3748;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+#datetime {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Dashboard Specific Styling */
+#overall-average-mark {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
 }
