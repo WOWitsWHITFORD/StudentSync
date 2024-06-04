@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignments</title>
+    <title>StudentSync - Assignments</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navbar -->
     <div class="navbar">
         <div class="navbar-left">
             <a href="index.html">Dashboard</a>
@@ -18,14 +19,15 @@
         </div>
         <div class="navbar-right" id="datetime"></div>
     </div>
+    <!-- Page Contents -->
     <h2>Assignments</h2>
     <div class="container">
         <table id="assignments-table">
-            <!-- Dynamically filled -->
+            <!-- Table Created From JavaScript -->
         </table>
         <button id="add-assignment-btn">Add Assignment</button>
     </div>
-
+    <!-- Add Assignment Popup -->
     <div id="assignment-popup" class="popup">
         <div class="popup-content">
             <span class="close">&times;</span>
@@ -37,7 +39,6 @@
             <button id="save-assignment-btn">Save</button>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>

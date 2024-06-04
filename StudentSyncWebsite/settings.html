@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navbar -->
     <div class="navbar">
         <div class="navbar-left">
             <a href="index.html">Dashboard</a>
@@ -18,14 +19,15 @@
         </div>
         <div class="navbar-right" id="datetime"></div>
     </div>
+    <!-- Page Contents -->
     <h2>Subjects</h2>
     <div class="container">
         <table id="subjects-table">
-            <!-- Dynamically filled -->
+            <!-- Table Created From JavaScript -->
         </table>
         <button id="add-subject-btn">Add Subject</button>
     </div>
-
+    <!-- Add Subject Popup -->
     <div id="subject-popup" class="popup">
         <div class="popup-content">
             <span class="close">&times;</span>
@@ -35,7 +37,6 @@
             <button id="save-subject-btn">Save</button>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>

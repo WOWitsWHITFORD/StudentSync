@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marks</title>
+    <title>StudentSync - Marks</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navbar -->
     <div class="navbar">
         <div class="navbar-left">
             <a href="index.html">Dashboard</a>
@@ -18,14 +19,15 @@
         </div>
         <div class="navbar-right" id="datetime"></div>
     </div>
+    <!-- Page Contents -->
     <h2>Marks</h2>
     <div class="container">
         <table id="marks-table">
-            <!-- Dynamically filled -->
+            <!-- Table Created From JavaScript -->
         </table>
         <button id="add-mark-btn">Add Task</button>
     </div>
-
+    <!-- Add Task Popup Window -->
     <div id="mark-popup" class="popup">
         <div class="popup-content">
             <span class="close">&times;</span>
@@ -38,7 +40,6 @@
             <button id="save-mark-btn">Save</button>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
