@@ -34,7 +34,12 @@ h2 {
     text-align: center;
 }
 
-.navbar a:hover {
+#logo {
+    font-style: italic;
+    font-size: 130%;
+}
+
+.navbar a:hover:not(#logo) {
     background-color: #4a5568;
 }
 

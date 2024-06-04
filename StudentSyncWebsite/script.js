@@ -249,12 +249,6 @@ document.addEventListener("DOMContentLoaded", function() {
             const assignmentsList = document.getElementById("assignments-list");
             assignmentsList.innerHTML = assignments.map(assignment => `
                 <tr>
-                    <td>Subject</td>
-                    <td>Task</td>
-                    <td>Weighting</td>
-                    <td>Due Date</td>
-                </tr>
-                <tr>
                     <td>${assignment.subject}</td>
                     <td>${assignment.taskName}</td>
                     <td>${assignment.weighting}</td>
