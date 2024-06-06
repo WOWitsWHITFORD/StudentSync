@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentSync - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <a id="logo">StudentSync</a>
+            <a href="index.html">Dashboard</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="marks.html">Marks</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="help.html">Help</a>
+            <a href="settings.html">Settings</a>
+        </div>
+        <div class="navbar-right" id="datetime"></div>
+    </div>
+    <!-- Upcoming Assignments Column -->
+    <div class="container">
+        <div class="column" id="assignments-column">
+            <h2>Assignments</h2>
+            <table id="assignments-list">
+                <!-- Table Created From JavaScript -->
+            </table>
+        </div>
+        <!-- Average Percent Mark Column -->
+        <div class="column" id="average-marks-column">
+            <h2>Average Marks</h2>
+            <div id="overall-average-mark"></div>
+            <table id="average-marks-list">
+                <!-- Table Created From JavaScript -->
+            </table>
+        </div>
+        <!-- Goals Column -->
+        <div class="column" id="goals-column">
+            <h2>Goals</h2>
+            <table id="goals-list">
+                <!-- Table Created From JavaScript -->
+            </table>
+            <button id="add-goal-btn">Add Goal</button>
+        </div>
+    </div>
+    <!-- Add Goal Button -->
+    <div id="goal-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Add Goal</h2>
+            <input type="text" id="goal-input" placeholder="Enter your goal">
+            <button id="save-goal-btn">Save</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
